@@ -1,0 +1,16 @@
+source "${HOME}/.cache/wal/colors.sh"
+
+set_bar() {
+	source "$HOME/.config/polybar/launch.sh"
+}
+
+set_scss() {
+    sassc --style expanded "${HOME}/startpage/scss/style.scss" > "${HOME}/startpage/style.css"
+}
+
+main() {
+    set_bar &
+    set_scss &
+}
+
+main >/dev/null 2>&1

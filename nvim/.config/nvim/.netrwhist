@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/jacob/.urxvt'
+let g:netrw_dirhist_2='/home/jacob/Programming'
+let g:netrw_dirhist_3='/home/jacob/.config/polybar'
+let g:netrw_dirhist_4='/home/jacob/Programming/learnML'
+let g:netrw_dirhist_5='/home/jacob/.fzf'
+let g:netrw_dirhist_6='/home/jacob/.config/i3'
+let g:netrw_dirhist_7='/home/jacob/Programming/site2/src/main/resources/static'
+let g:netrw_dirhist_8='/etc/profile.d'

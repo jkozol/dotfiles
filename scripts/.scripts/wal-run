@@ -1,0 +1,31 @@
+#!/bin/bash          
+
+
+#t= $(dtest time --gt '02:00:00')
+#H=$(date +%H)
+#echo $t
+
+
+
+
+#if dtest time --gt '15:00:00'; then
+#	echo "hi"
+#fi
+
+
+#Off by +5 hours
+
+if dtest time --gt '11:00:00' && dtest time --le '16:00:00'; then 
+	wal -i /home/jacob/Pictures/wallpapers/morning -o wal-set
+	echo "morn"
+elif dtest time --gt '16:00:00' && dtest time --le '22:00:00'; then 
+	wal -i /home/jacob/Pictures/wallpapers/day -o wal-set
+	echo "day"
+elif dtest time --gt '22:00:00' || dtest time --le '11:00:00'; then 
+	wal -i /home/jacob/Pictures/wallpapers/night -o wal-set
+	echo "night"
+else
+	wal -i /home/jacob/Pictures/wallpapers/ -o wal-set 
+fi
+	
+#wal -i /home/jacob/Pictures/wallpapers/ -o wal-set
