@@ -3,15 +3,6 @@ margin-bottom = 5
 margin-top = 5
 
 [colors]
-white = #d1d1d1
-#white = "$color7"
-gray = #585858
-black = #090909
-#black = "$color4"
-red = #c795ae
-blue = #95aec7
-yellow = #c7ae95
-green = #aec795
 bg = ${xrdb:color2}
 fg = ${xrdb:color0}
 focus = ${xrdb:color6}
@@ -20,8 +11,9 @@ focus = ${xrdb:color6}
 monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 22
+#height = 30
 offset-x = 0
-offset-y = 5
+offset-y = 5 
 padding-right = 2
 padding-left = 2 
 border-top = 5
@@ -32,13 +24,13 @@ override-redirect = true
 background = #00000000
 foreground = #000000
 
-font-0 = Hack:pixelsize=12;1
-font-1 = Snifont:size=6:heavy:fontformat=truetype;-2
-font-2 = Siji:pixelsize=10;0
-font-3 = FontAwesome:pixelsize=14;0
+#font-0 = Hack:pixelsize=12;1
+#font-1 = Snifont:size=6:heavy:fontformat=truetype;-2
+#font-2 = Siji:pixelsize=10;0
+font-1 = FontAwesome:pixelsize=14;4
 
+font-0 = Monaco;pixelsize=14;3
 tray-transparent = false
-#override-redirect = false
 
 [bar/topspace]
 inherit = bar/topbar
@@ -51,9 +43,10 @@ modules-center = fill
 
 [bar/topright]
 inherit = bar/topbar
-width = 190
-offset-x = 1720
+width = 220
+offset-x = 1690
 background = ${colors.bg}
+
 foreground = ${colors.fg}
 modules-center = battery network volume date
 
@@ -62,6 +55,7 @@ inherit = bar/topbar
 width = 100
 offset-x = 10
 #radius = 30
+#background = ${xrdb:color0}
 background = ${colors.bg}
 modules-center = i3
 
@@ -96,6 +90,7 @@ index-sort = true
 wrapping-scroll = true
 strip-wsnumbers = true
 pin-workspaces = true
+
 background = ${colors.white}
 
 label-mode-padding = 5
@@ -127,11 +122,9 @@ interval = 5
 
 date-alt = "%m/%d/%y"
 time-alt = ""
-time = " %H:%M  "
+time = "%H:%M"
 label = %date%%time%
-#label-background = ${colors.bg}
-#label-foreground = ${colors.fg}
-
+format-label-margin = 50
 
 [module/volume]
 type = internal/volume
@@ -139,9 +132,8 @@ type = internal/volume
 format-volume = <label-volume>
 
 label-volume = %percentage%
-label-volume-padding = 1
+format-volume-margin = 2
 label-muted = muted
-label-muted-padding = 0
 
 
 [module/battery]
@@ -179,15 +171,16 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-#format-connected-padding = 1
-#format-disconnected-padding = 1
+format-connected-margin = 6
+format-disconnected-margin = 6
+
 
 format-connected = <label-connected>
 
 label-connected =  
 #label-connected-background = ${colors.white}
-#label-connected-foreground = ${colors.black}
+label-connected-foreground = ${colors.fg}
 
 label-disconnected = 
 #label-disconnected-foreground = ${colors.gray}
-#label-disconnected-background = ${colors.white}
+label-disconnected-background = ${colors.focus}
