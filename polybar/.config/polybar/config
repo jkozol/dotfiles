@@ -45,12 +45,10 @@ modules-center = fill
 
 [bar/topright]
 inherit = bar/topbar
-width = 220
-offset-x = 1690
-
+width = 155
+offset-x = 1755
 background = ${colors.bg}
 foreground = ${colors.fg}
-
 modules-center = battery network volume date
 
 
@@ -58,9 +56,7 @@ modules-center = battery network volume date
 inherit = bar/topbar
 width = 100
 offset-x = 10
-
 background = ${colors.bg}
-
 modules-center = i3
 
 
@@ -124,20 +120,20 @@ label-urgent-padding = 1
 type = internal/date
 interval = 5
 
-date-alt = "%m/%d"
+date-alt = " %m/%d "
 time-alt = ""
-time = "%H:%M"
+time = " %H:%M "
 label = %date%%time%
-
 
 [module/volume]
 type = internal/volume
 
 format-volume = <label-volume>
 
-label-volume = %percentage%
-format-volume-margin = 2
-label-muted = muted
+label-volume = "%percentage%"
+format-volume-margin = 1
+format-muted-margin = 1
+label-muted = "00"
 
 
 [module/battery]
@@ -147,21 +143,21 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-padding = 0
+format-charging-margin = 0
 
 label-charging =
 
 format-discharging = <label-discharging> <ramp-capacity> <label-discharging>
-format-discharging-padding = 0
+format-discharging-margin = 0
 
 label-discharging = 
 
-format-full =   <label-full>
-format-full-padding = 0
+format-full = 
+#format-full-margin = 0
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -176,8 +172,8 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-format-connected-margin = 6
-format-disconnected-margin = 6
+format-connected-margin = 1
+format-disconnected-margin = 1 
 
 format-connected = <label-connected>
 
