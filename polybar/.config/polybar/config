@@ -5,7 +5,7 @@ margin-top = 5
 [colors]
 bg = ${xrdb:color2}
 fg = ${xrdb:color0}
-focus = ${xrdb:color6}
+alt = ${xrdb:color6}
 
 
 ;_________________________________________
@@ -45,8 +45,8 @@ modules-center = fill
 
 [bar/topright]
 inherit = bar/topbar
-width = 155
-offset-x = 1755
+width = 175
+offset-x = 1735
 background = ${colors.bg}
 foreground = ${colors.fg}
 modules-center = battery network volume date
@@ -94,20 +94,20 @@ pin-workspaces = true
 background = ${colors.white}
 
 label-mode-padding = 5
-label-mode-foreground = ${colors.fg}
+label-mode-foreground = ${colors.alt}
 label-mode-background = ${colors.bg}
 
 label-unfocused = 
-label-unfocused-foreground = ${colors.fg} 
+label-unfocused-foreground = ${colors.alt} 
 label-unfocused-background = ${colors.bg}
 label-unfocused-padding = 1
 
 label-visible = 
-label-visible-foregroud = ${colors.fg}
+label-visible-foregroud = ${colors.alt}
 label-visible-padding = 1
 
 label-focused = 
-label-focused-foreground = ${colors.focus}
+label-focused-foreground = ${colors.fg}
 label-focused-background = ${colors.bg}
 label-focused-padding = 1
 
@@ -131,8 +131,8 @@ type = internal/volume
 format-volume = <label-volume>
 
 label-volume = "%percentage%"
-format-volume-margin = 1
-format-muted-margin = 1
+format-volume-margin = 2
+format-muted-margin = 2
 label-muted = "00"
 
 
@@ -172,8 +172,8 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-format-connected-margin = 1
-format-disconnected-margin = 1 
+format-connected-margin = 2
+format-disconnected-margin = 2  
 
 format-connected = <label-connected>
 
@@ -181,4 +181,4 @@ label-connected = 
 label-connected-foreground = ${colors.fg}
 
 label-disconnected = 
-label-disconnected-background = ${colors.focus}
+label-disconnected-foreground = ${colors.alt}
