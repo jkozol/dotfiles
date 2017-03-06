@@ -131,10 +131,11 @@ type = internal/volume
 format-volume = <label-volume>
 
 label-volume = "%percentage%"
-format-volume-margin = 2
-format-muted-margin = 2
 label-muted = "00"
 
+format-volume-margin = 2
+format-muted-margin = 2
+format-muted-foreground = ${colors.alt}
 
 [module/battery]
 type = internal/battery

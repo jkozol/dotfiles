@@ -1,8 +1,6 @@
 ! Fonts
-URxvt.font:xft:DejaVu:pixelsize=13:antialias=True,xft:DejaVu:pixelsize=13:antialias=True
-URxvt.boldFont:
-XTerm.font:xft:DejaVu:pixelsize=13:antialias=True,xft:DejaVu:pixelsize=13:antialias=True
-XTerm.boldFont:
+URxvt.font:xft:DejaVu:pixelsize=13:antialias=True,xft
+URxvt.boldFont:xft:DejaVu:pixelsize=13:antialias=True
 
 URxvt.transparent: true
 URxvt.shading:20

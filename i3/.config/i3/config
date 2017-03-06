@@ -154,7 +154,6 @@ bindsym $mod+d exec --no-startup-id rofi -fake-transparency -show run
 bindsym $mod+w exec --no-startup-id $HOME/.scripts/wal-run
 
 
-
 # Background and compositor
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton  --config ~/.compton.conf -b -c
@@ -166,6 +165,3 @@ exec --no-startup-id xinput set-prop 11 287 1
 exec --no-startup-id /etc/profile.d/vte.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id prompt pure
-
-#wal
-exec_always --no-startup-id $HOME/.scripts/wal-run
