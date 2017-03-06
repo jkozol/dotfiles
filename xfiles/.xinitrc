@@ -1,19 +1,10 @@
 #!/bin/sh
 
-# Stupid font things
+# load fonts
 xset +fp /home/jacob/.fonts
 xset fp rehash
 
-# Make X Terminal Emulator terms not ugly
+# Load X Terminal Resouce Database colors
 xrdb ~/.Xresources
-
-# MPD
-sleep 2 && (
-	mpd
-	mpdscribble
-	$HOME/.bin/mpd-notify-daemon &
-) &
-
-wal -i "$HOME/Pictures/wallpapers/" -o wal-set
 
 exec i3

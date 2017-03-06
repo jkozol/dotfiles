@@ -1,7 +1,7 @@
 ! Fonts
-URxvt.font:xft:DejaVu:pixelsize=12:antialias=True,xft:DejaVu:pixelsize=12:antialias=True
+URxvt.font:xft:DejaVu:pixelsize=13:antialias=True,xft:DejaVu:pixelsize=13:antialias=True
 URxvt.boldFont:
-XTerm.font:xft:DejaVu:pixelsize=12:antialias=True,xft:DejaVu:pixelsize=12:antialias=True
+XTerm.font:xft:DejaVu:pixelsize=13:antialias=True,xft:DejaVu:pixelsize=13:antialias=True
 XTerm.boldFont:
 
 URxvt.transparent: true
@@ -22,16 +22,11 @@ Xft.hintstyle: hintnone
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
-! Separate settings for emacs
-emacs.internalBorder: 0
-
 ! rofi
-rofi.font:              DejaVu 12
-
+rofi.font:              DejaVu 14
 rofi.location:          0
 rofi.color-enabled:     true
 rofi.separator-style:   solid
-!rofi.fullscreen:        true
 rofi.width: 100
 rofi.padding:   700
 rofi.opacity:   90
@@ -43,15 +38,6 @@ rofi.lines: 12
 rofi.tokenize: false
 
 
-!rofi.color-window:      argb:B3000000, argb:B3000000, argb:E6ffffff
-!rofi.color-normal:      argb:00000000, argb:969896B3, argb:00000000, argb:00000000, argb:FFFFFFFF 
-!ffe1a3ee
-!rofi.color-urgent:      argb:00282a2e, argb:FFcc6666, argb:00282a2e, argb:ffcc6666, argb:e61d1f21
-!rofi.color-active:      argb:00282a2e, argb:FF81a2be, argb:00282a2e, argb:ff81a2be, argb:e61d1f21
-
-
-
-
 ! Clickable Links
 *perl-ext-common:	 default,matcher,clipboard
 *keysym.Shift-Control-V: perl:clipboard:paste
@@ -60,7 +46,6 @@ rofi.tokenize: false
 *url-select.underline:	 true
 
 ! Extra
-
 *.color254:     #191921
 *.color255:     #eeeeee
 
