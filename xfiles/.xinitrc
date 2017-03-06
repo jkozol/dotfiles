@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # load fonts
 xset +fp /home/jacob/.fonts
