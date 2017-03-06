@@ -206,7 +206,7 @@ new_window pixel 0
 
 # Background and compositor
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --shadow-exclude "! name~=''" --config ~/.compton.conf -b
+exec --no-startup-id compton  --config ~/.compton.conf -b -c
 
 # Touchpad settings
 exec --no-startup-id xinput set-prop 11 277 1

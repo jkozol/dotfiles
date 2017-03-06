@@ -12,6 +12,7 @@ My dotfiles for my arch linux setup.
 - Bar: `polybar`
 - Compositor: `compton`
 - Colors: `wal`
+- Desktop Manager; `lightDM`
 - Operating System: `Arch Linux`
 - Shell `bash` with `zsh`
 - Terminal Emulator: `urxvt`

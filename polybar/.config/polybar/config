@@ -7,30 +7,31 @@ bg = ${xrdb:color2}
 fg = ${xrdb:color0}
 focus = ${xrdb:color6}
 
+
+;_________________________________________
+i*****************************************
+
+
 [bar/topbar]
 monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 22
-#height = 30
 offset-x = 0
 offset-y = 5 
 padding-right = 2
 padding-left = 2 
 border-top = 5
-
 bottom = false
+
 override-redirect = true
+tray-transparent = false
 
 background = #00000000
 foreground = #000000
 
-#font-0 = Hack:pixelsize=12;1
-#font-1 = Snifont:size=6:heavy:fontformat=truetype;-2
-#font-2 = Siji:pixelsize=10;0
+font-0 = Monaco;pixelsize=14;3
 font-1 = FontAwesome:pixelsize=14;4
 
-font-0 = Monaco;pixelsize=14;3
-tray-transparent = false
 
 [bar/topspace]
 inherit = bar/topbar
@@ -41,23 +42,27 @@ override-redirect = false
 offset-x = 0
 modules-center = fill
 
+
 [bar/topright]
 inherit = bar/topbar
 width = 220
 offset-x = 1690
-background = ${colors.bg}
 
+background = ${colors.bg}
 foreground = ${colors.fg}
+
 modules-center = battery network volume date
+
 
 [bar/topleft]
 inherit = bar/topbar
 width = 100
 offset-x = 10
-#radius = 30
-#background = ${xrdb:color0}
+
 background = ${colors.bg}
+
 modules-center = i3
+
 
 [bar/test]
 inherit = bar/topbar
@@ -69,7 +74,7 @@ modules-center = test
 
 
 ;_________________________________________
-;*****************************************
+i*****************************************
 
 
 [module/test]
@@ -80,7 +85,6 @@ content = "hello"
 [module/fill]
 type = custom/text
 content = " "
-#foreground = #00000000
 
 
 [module/i3]
@@ -120,11 +124,11 @@ label-urgent-padding = 1
 type = internal/date
 interval = 5
 
-date-alt = "%m/%d/%y"
+date-alt = "%m/%d"
 time-alt = ""
 time = "%H:%M"
 label = %date%%time%
-format-label-margin = 50
+
 
 [module/volume]
 type = internal/volume
@@ -166,6 +170,7 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 500
 
+
 [module/network]
 type = internal/network
 interface = wlp2s0
@@ -174,13 +179,10 @@ interval = 3.0
 format-connected-margin = 6
 format-disconnected-margin = 6
 
-
 format-connected = <label-connected>
 
 label-connected =  
-#label-connected-background = ${colors.white}
 label-connected-foreground = ${colors.fg}
 
 label-disconnected = 
-#label-disconnected-foreground = ${colors.gray}
 label-disconnected-background = ${colors.focus}
