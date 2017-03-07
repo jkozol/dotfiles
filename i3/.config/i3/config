@@ -24,7 +24,10 @@ client.background       $bg
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod4
+
+
 for_window [class="feh"] floating enable
+
 
 
 # move focused window
@@ -71,6 +74,7 @@ set $ws1  1
 set $ws2  2
 set $ws3  3
 set $ws4  4
+set $ws5  5
 # switch to workspace
 bindsym $mod+1 exec --no-startup-id i3-msg workspace $ws1
 bindsym $mod+2 exec --no-startup-id i3-msg workspace $ws2
@@ -153,7 +157,6 @@ bindsym $mod+d exec --no-startup-id rofi -fake-transparency -show run
 # wal hotkey
 bindsym $mod+w exec --no-startup-id $HOME/.scripts/wal-run
 
-
 # Background and compositor
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton  --config ~/.compton.conf -b -c
@@ -164,4 +167,6 @@ exec --no-startup-id xinput set-prop 11 287 1
 
 exec --no-startup-id /etc/profile.d/vte.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id prompt pure
+
+
+assign [class="Obshutdown"] $ws5
