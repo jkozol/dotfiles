@@ -12,5 +12,5 @@ elif dtest time --gt '22:00:00' || dtest time --le '11:00:00'; then
 	wal -i /home/jacob/Pictures/wallpapers/night -o wal-set
 	echo "night"
 else
-	wal -i /home/jacob/Pictures/wallpapers/ -o wal-set 
+	wal -i /home/jacob/Pictures/wallpapers/all -o wal-set 
 fi	

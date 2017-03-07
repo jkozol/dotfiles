@@ -15,11 +15,11 @@ My dotfiles for my arch linux setup.
 - Desktop Manager: `lightDM`
 - Greeter: `flat-plat`
 - Lock: `i3lock`
-- Operating System: `Arch Linux`
+- Operating System: `arch linux`
 - Shell `zsh`
 - Terminal Emulator: `urxvt`
 - Text Editor: `neovim`
-- Firefox Theme: `Arc`
+- Theme: `adwaita`
 - Window Manager: `i3-gaps`
 
 

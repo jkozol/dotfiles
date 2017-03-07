@@ -5,7 +5,7 @@ set_bar() {
 }
 
 set_scss() {
-    sassc --style expanded "${HOME}/startpage/scss/style.scss" > "${HOME}/startpage/style.css"
+    sassc --style expanded "${HOME}/.startpage/scss/style.scss" > "${HOME}/.startpage/style.css"
 }
 
 main() {

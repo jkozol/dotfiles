@@ -156,6 +156,10 @@ bindsym $mod+d exec --no-startup-id rofi -fake-transparency -show run
 
 # wal hotkey
 bindsym $mod+w exec --no-startup-id $HOME/.scripts/wal-run
+bindsym $mod+a exec --no-startup-id wal -i /home/jacob/Pictures/wallpapers/all -o wal-set
+
+bindsym $mod+Shift+p exec import -window root Pictures/screenshots/screenshot6.jpg
+
 
 # Background and compositor
 exec --no-startup-id nitrogen --restore
