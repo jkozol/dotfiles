@@ -13,9 +13,10 @@ My dotfiles for my arch linux setup.
 - Compositor: `compton`
 - Colors: `wal`
 - Desktop Manager: `lightDM`
-- Greeter: `Flat-Plat`
+- Greeter: `flat-plat`
+- Lock: `i3lock`
 - Operating System: `Arch Linux`
-- Shell `bash` with `zsh`
+- Shell `zsh`
 - Terminal Emulator: `urxvt`
 - Text Editor: `neovim`
 - Firefox Theme: `Arc`
