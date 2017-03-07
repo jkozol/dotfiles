@@ -5,6 +5,7 @@ My dotfiles for my arch linux setup.
 
 ## Pictures
 
+[Screenshots](http://imgur.com/a/O1z2z)
 
 ## Setup 
 
